@@ -1,7 +1,12 @@
 .App {
   font-size: 20px;
 }
+h1 {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
 footer {
-  color: fuchsia;
+  color: hotpink;
+  font-family: "Courier New", Courier, monospace;
   text-align: center;
 }

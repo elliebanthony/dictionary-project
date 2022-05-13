@@ -5,9 +5,8 @@ import React from "react";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p className="btn btn-primary m-3"> Dictionary </p>
-      </header>
+      <h1 className="m-3"> Dictionary </h1>
+      <br />
       <Dictionary />
       <footer> Coded by Ellie Anthony</footer>
     </div>
