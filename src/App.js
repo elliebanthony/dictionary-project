@@ -6,8 +6,8 @@ function App() {
   return (
     <div className="App">
       <h1 className="m-3"> Dictionary </h1>
-      <br />
       <Dictionary />
+      <br />
       <footer> Coded by Ellie Anthony</footer>
     </div>
   );
