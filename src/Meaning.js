@@ -11,7 +11,7 @@ export default function Meaning(props) {
             {" "}
             <p>
               {" "}
-              <strong> Definition: {definition.definition} </strong>{" "}
+              <strong> Definition: </strong> {definition.definition}{" "}
             </p>
             <hr />
             <p>
