@@ -11,3 +11,10 @@ p {
 .meaning {
   background-color: lavender;
 }
+.phonetics {
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+  color: plum;
+}
