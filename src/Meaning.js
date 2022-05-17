@@ -3,12 +3,12 @@ import Synonyms from "./Synonyms";
 
 export default function Meaning(props) {
   return (
-    <div className="meaning">
+    <div className="meaning m-2 p-2 btn-group shadow-lg">
       {" "}
       <h3> {props.meaning.partOfSpeech}</h3>
       {props.meaning.definitions.map(function(definition, index) {
         return (
-          <div key={index} className="m-2 p-2 btn-group shadow-lg">
+          <div key={index}>
             {" "}
             <p>
               {" "}
