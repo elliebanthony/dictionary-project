@@ -4,3 +4,7 @@ form {
 .results {
   text-align: center;
 }
+.meaning {
+  text-align: center;
+  display: block;
+}

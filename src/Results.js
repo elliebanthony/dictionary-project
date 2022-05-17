@@ -19,6 +19,7 @@ export default function Results(props) {
           return (
             <div key={index}>
               {" "}
+              <hr />
               <Meaning meaning={meaning} />{" "}
             </div>
           );
