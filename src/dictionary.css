@@ -1,6 +1,10 @@
 form {
   text-align: center;
 }
+p {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
 .results {
   text-align: center;
 }
