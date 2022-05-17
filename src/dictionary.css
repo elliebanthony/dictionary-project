@@ -5,6 +5,7 @@ form {
   text-align: center;
 }
 .meaning {
-  text-align: left;
+  text-align: center;
   display: block;
+  background-color: lavender;
 }

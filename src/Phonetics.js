@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Phonetics(props) {
   return (
-    <div className="shadow-md btn">
+    <div className="phonetics">
       {" "}
       <a href={props.phonetic.audio} target="_blank" rel="noopener noreferrer">
         {" "}
