@@ -12,6 +12,9 @@ p {
   background-color: lavender;
   text-align: center;
 }
+.synonym {
+  text-align: left;
+}
 .phonetics {
   text-decoration: none;
   display: inline-block;
