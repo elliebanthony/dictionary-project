@@ -8,7 +8,18 @@ function App() {
       <h1 className="m-3"> Dictionary </h1>
       <Dictionary />
       <br />
-      <footer> Coded by Ellie Anthony</footer>
+      <footer>
+        {" "}
+        <a
+          href="https://github.com/elliebanthony/dictionary-project"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          Open Source Code{" "}
+        </a>{" "}
+        by Ellie Anthony{" "}
+      </footer>
     </div>
   );
 }
