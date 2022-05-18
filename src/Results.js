@@ -14,7 +14,7 @@ export default function Results(props) {
           })
           .map(function(phonetic, index) {
             return (
-              <span key={index} className="m-1">
+              <span key={index}>
                 <Phonetics phonetic={phonetic} />
               </span>
             );
