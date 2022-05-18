@@ -14,9 +14,9 @@ export default function Results(props) {
           })
           .map(function(phonetic, index) {
             return (
-              <div key={index}>
+              <span key={index} className="m-1">
                 <Phonetics phonetic={phonetic} />
-              </div>
+              </span>
             );
           })}
         {props.results.meanings.map(function(meaning, index) {

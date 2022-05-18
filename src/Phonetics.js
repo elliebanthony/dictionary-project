@@ -3,14 +3,13 @@ import "./dictionary.css";
 
 export default function Phonetics(props) {
   return (
-    <div className="phonetics">
+    <span className="phonetics">
       {" "}
       <a href={props.phonetic.audio} target="_blank" rel="noopener noreferrer">
         {" "}
         Listen{" "}
       </a>
-      <br />
       {props.phonetic.text}{" "}
-    </div>
+    </span>
   );
 }
