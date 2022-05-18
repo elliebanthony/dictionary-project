@@ -22,6 +22,7 @@ export default function Dictionary() {
   }
   return (
     <div className="Dict">
+      <h2> What word would you like to search? </h2>
       <form className="m-2 p-2" onSubmit={search}>
         <input type="search" onChange={handleKeyword} />
         <input type="submit" />
