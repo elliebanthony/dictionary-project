@@ -1,11 +1,17 @@
 p {
   text-align: left;
   font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
 }
-
+.Dict {
+  padding: 30px;
+  border-radius: 6px;
+  margin: 0 auto;
+}
 .Dict h2 {
   font-size: 20px;
   text-align: center;
+  font-weight: bold;
   color: plum;
   font-family: "Courier New", Courier, monospace;
 }
@@ -15,16 +21,11 @@ p {
 .Dict input {
   max-width: 100%;
 }
-.Dict {
-  padding: 30px;
-  border-radius: 6px;
-}
 .results {
   text-align: center;
   box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
-  margin-left: 150px;
-  margin-right: 150px;
-  max-width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
 }
 .results h2 {
   font-weight: bolder;
