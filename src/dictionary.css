@@ -2,6 +2,7 @@ p {
   text-align: left;
   font-family: "Courier New", Courier, monospace;
 }
+
 .Dict h2 {
   font-size: 20px;
   text-align: center;
@@ -17,13 +18,20 @@ p {
 .Dict {
   padding: 30px;
   border-radius: 6px;
+}
+.results {
+  text-align: center;
   box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
   margin-left: 150px;
   margin-right: 150px;
   max-width: 100%;
 }
-.results {
+.results h2 {
+  font-weight: bolder;
+  font-size: 40px;
   text-align: center;
+  color: plum;
+  font-family: "Courier New", Courier, monospace;
 }
 .meaning {
   background-color: lavenderblush;
