@@ -1,21 +1,16 @@
 import React from "react";
 
 export default function Photos(props) {
-  console.log(props);
-  return (
-    <div className="row">
-      <div className="col-3">
-        {" "}
-        <img src={props[0]} alt="_blank" />
+  if (props.photos) {
+    console.log(props.photos);
+    return (
+      <div className="photos">
+        {props.photos.map(function(photo, index) {
+          return <img src={photo.src.landscape} alt="" key={index} />;
+        })}
       </div>
-      <div className="col-3">
-        {" "}
-        <img src={props[1]} alt="_blank" />
-      </div>
-      <div className="col-3">
-        {" "}
-        <img src={props[2]} alt="_blank" />{" "}
-      </div>
-    </div>
-  );
+    );
+  } else {
+    return null;
+  }
 }
