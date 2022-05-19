@@ -13,7 +13,7 @@ export default function Dictionary() {
     setResults(response.data[0]);
   }
   function handlePexelResponse(response) {
-    setPhotos(response.data);
+    setPhotos(response.data.photos);
   }
   function search(event) {
     event.preventDefault();
