@@ -2,17 +2,19 @@ import React, { useState } from "react";
 import axios from "axios";
 import Results from "./Results";
 import "./dictionary.css";
+import Photos from "./Photos";
 
 export default function Dictionary() {
   let [keyword, setKeyword] = useState("");
   let [results, setResults] = useState(null);
+  let [photos, setPhotos] = useState(null);
 
   function handleResponse(response) {
     console.log(response.data[0]);
     setResults(response.data[0]);
   }
   function handlePexelResponse(response) {
-    console.log(response);
+    setPhotos(response.data.photos[0].src.small);
   }
   function search(event) {
     event.preventDefault();
@@ -37,6 +39,7 @@ export default function Dictionary() {
         <input type="submit" />
       </form>
       <Results results={results} />
+      <Photos photos={photos} />
     </div>
   );
 }
