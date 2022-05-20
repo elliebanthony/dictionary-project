@@ -5,7 +5,7 @@ import React from "react";
 function App() {
   return (
     <div className="App">
-      <h1 className="m-3"> Dictionary </h1>
+      <h1 className="mt-2"> Dictionary </h1>
       <Dictionary />
       <br />
       <footer>
