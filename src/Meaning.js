@@ -3,7 +3,7 @@ import Synonyms from "./Synonyms";
 
 export default function Meaning(props) {
   return (
-    <div className="meaning m-4 p-3 shadow-md">
+    <div className="meaning m-3 p-3 shadow-md">
       {" "}
       <h3> {props.meaning.partOfSpeech}</h3>
       {props.meaning.definitions.map(function(definition, index) {
