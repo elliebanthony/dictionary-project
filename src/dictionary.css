@@ -21,6 +21,11 @@ p {
 .Dict input {
   max-width: 100%;
 }
+.Dict .search {
+  background-color: lavenderblush;
+  margin-left: 10px;
+  cursor: pointer;
+}
 section {
   text-align: center;
   box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
@@ -42,10 +47,11 @@ section {
 .synonym {
   text-align: left;
 }
-.phonetics {
+.phonetics a {
   text-decoration: none;
   display: inline-block;
   margin-left: 10px;
+  cursor: pointer;
 }
 .phonetics a {
   text-decoration: none;

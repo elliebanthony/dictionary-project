@@ -43,6 +43,7 @@ export default function Dictionary(props) {
         <h2> What word would you like to search? </h2>
         <form className="m-1 p-1" onSubmit={handleSubmit}>
           <input type="search" onChange={handleKeyword} />
+          <input type="submit" className="btn search" />
         </form>
         <Results results={results} />
         <Photos photos={photos} />
