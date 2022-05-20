@@ -1,10 +1,11 @@
 import React from "react";
+import "./dictionary.css";
 
 export default function Photos(props) {
   if (props.photos) {
     return (
-      <div className="results">
-        <div className="row">
+      <section className="Photos">
+        <div className="row m-1">
           {props.photos.map(function(photo, index) {
             return (
               <div className="col-4" key={index}>
@@ -19,7 +20,7 @@ export default function Photos(props) {
             );
           })}
         </div>
-      </div>
+      </section>
     );
   } else {
     return null;

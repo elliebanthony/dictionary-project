@@ -21,7 +21,7 @@ p {
 .Dict input {
   max-width: 100%;
 }
-.results {
+section {
   text-align: center;
   box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
   max-width: 80%;
@@ -34,12 +34,10 @@ p {
   color: plum;
   font-family: "Courier New", Courier, monospace;
 }
-.results .col-4 {
-  padding: 10px;
-}
 .meaning {
   background-color: lavenderblush;
   text-align: center;
+  border-radius: 15px;
 }
 .synonym {
   text-align: left;
@@ -55,8 +53,7 @@ p {
   background-color: lavenderblush;
   font-family: "Courier New", Courier, monospace;
 }
-img {
-  border-radius: 10px;
-  padding: 10px;
-  width: 100%;
+.Photos img {
+  border-radius: 5px;
+  display: block;
 }
