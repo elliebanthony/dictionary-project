@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <h1 className="mt-2"> Dictionary </h1>
-      <Dictionary />
+      <Dictionary defaultKeyword="moon" />
       <br />
       <footer>
         {" "}

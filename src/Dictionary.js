@@ -4,10 +4,11 @@ import Results from "./Results";
 import "./dictionary.css";
 import Photos from "./Photos";
 
-export default function Dictionary() {
-  let [keyword, setKeyword] = useState("");
+export default function Dictionary(props) {
+  let [keyword, setKeyword] = useState(props.defaultKeyword);
   let [results, setResults] = useState(null);
   let [photos, setPhotos] = useState(null);
+  let [loaded, setLoaded] = useState(false);
 
   function handleResponse(response) {
     setResults(response.data[0]);
@@ -15,9 +16,7 @@ export default function Dictionary() {
   function handlePexelResponse(response) {
     setPhotos(response.data.photos);
   }
-  function search(event) {
-    event.preventDefault();
-
+  function search() {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
     axios.get(apiUrl).then(handleResponse);
 
@@ -30,15 +29,32 @@ export default function Dictionary() {
   function handleKeyword(event) {
     setKeyword(event.target.value);
   }
-  return (
-    <div className="Dict">
-      <h2> What word would you like to search? </h2>
-      <form className="m-1 p-1" onSubmit={search}>
-        <input type="search" onChange={handleKeyword} />
-        <input type="submit" />
-      </form>
-      <Results results={results} />
-      <Photos photos={photos} />
-    </div>
-  );
+  function handleSubmit(event) {
+    event.preventDefault();
+    search();
+  }
+  function load() {
+    setLoaded(true);
+    search();
+  }
+  if (loaded) {
+    return (
+      <div className="Dict">
+        <h2> What word would you like to search? </h2>
+        <form className="m-1 p-1" onSubmit={handleSubmit}>
+          <input
+            type="search"
+            onChange={handleKeyword}
+            defaultValue={props.defaultKeyword}
+          />
+          <input type="submit" />
+        </form>
+        <Results results={results} />
+        <Photos photos={photos} />
+      </div>
+    );
+  } else {
+    load();
+    return "Loading...";
+  }
 }
