@@ -34,6 +34,9 @@ p {
   color: plum;
   font-family: "Courier New", Courier, monospace;
 }
+.results .col-4 {
+  padding: 10px;
+}
 .meaning {
   background-color: lavenderblush;
   text-align: center;
@@ -52,5 +55,4 @@ a {
 img {
   border-radius: 10px;
   padding: 10px;
-  margin: 10px;
 }

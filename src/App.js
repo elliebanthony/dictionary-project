@@ -16,7 +16,7 @@ function App() {
           rel="noopener noreferrer"
         >
           {" "}
-          Open Source Code{" "}
+          Open Source Code 🌟{" "}
         </a>{" "}
         by Ellie Anthony{" "}
       </footer>
