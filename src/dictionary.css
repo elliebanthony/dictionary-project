@@ -4,7 +4,7 @@ p {
   font-size: 18px;
 }
 .Dict {
-  padding: 30px;
+  padding: 25px;
   border-radius: 6px;
   margin: 0 auto;
 }
@@ -47,10 +47,13 @@ p {
 .phonetics {
   text-decoration: none;
   display: inline-block;
+  margin-left: 10px;
 }
-a {
+.phonetics a {
   text-decoration: none;
-  color: plum;
+  border-radius: 10px;
+  background-color: lavenderblush;
+  font-family: "Courier New", Courier, monospace;
 }
 img {
   border-radius: 10px;
