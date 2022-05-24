@@ -20,6 +20,7 @@ p {
 }
 .Dict input {
   max-width: 100%;
+  background-color: lavenderblush;
 }
 .Dict .search {
   background-color: lavenderblush;
